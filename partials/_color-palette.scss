@@ -1,0 +1,64 @@
+// //UI & Text
+// $white: #ffffff;
+// $gray-1:#f5f5f5;
+// $gray-2:#e0e0e0;
+// $gray-3:#cdc9c9;
+// $gray-4:#767676;
+// $gray-5:#3c3c3c;
+//
+// //Brand Blues
+// $blue-1:#dce8f9;
+// $blue-2:#a3bad8;
+// $blue-3:#5778a4;
+// $blue-4:#30507b;
+// $blue-5:#122647;
+//
+// //Status & CTAs
+// $yellow-1:#ffefb6;
+// $yellow-2:#ffd33b;
+// $red-1:#ffecec;
+// $red-2:#dc0028;
+// $green-1:#ecf7e4;
+// $green-2:#307f2f;
+// $blue-cta-1:#2560b1;
+// $blue-cta-2:#4cc4e7;
+//
+//
+// $colors:(
+// 	white:$white,
+// 	gray-1:$gray-1,
+// 	gray-2:$gray-2,
+// 	gray-3:$gray-3,
+// 	gray-4:$gray-4,
+// 	gray-5:$gray-5,
+// 	blue-1:$blue-1,
+// 	blue-2:$blue-2,
+// 	blue-3:$blue-3,
+// 	blue-4:$blue-4,
+// 	blue-5:$blue-5,
+// 	yellow-1:$yellow-1,
+// 	yellow-2:$yellow-2,
+// 	red-1:$red-1,
+// 	red-2:$red-2,
+// 	green-1:$green-1,
+// 	green-2:$green-2,
+// 	blue-cta-1:$blue-cta-1,
+// 	blue-cta-2:$blue-cta-2
+// 	);
+// //colors and background colors
+// @each $color, $value in $colors {
+// 	.#{$color} { color: $value!important};
+// 	.#{$color}-bg {background-color:$value};
+// }
+//
+// //for swatch
+// .swatch{
+// 	display:inline-block;
+// 	width:50px;
+// 	height:50px;
+// }
+// .swatch-sm{
+// 	@extend .swatch;
+// 	width:20px;
+// 	height:20px;
+// }

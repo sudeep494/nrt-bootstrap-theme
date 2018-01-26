@@ -1,0 +1,59 @@
+//TODO: refactor with Bootstrap4 spacing utilities
+$spacing-sizes: (
+	none: 0,
+	xxxs: 3px,
+	xxs: 5px,
+	xs: 10px,
+	sm: 15px,
+	md: 20px,
+	lg: 25px,
+	xl: 30px,
+	xxl: 40px,
+	xxxl: 50px
+);
+
+@each $spacing-size, $value in $spacing-sizes {
+
+	//inner-spacings (padding)
+	.p-#{$spacing-size} { padding: $value!important};
+	.p-t-#{$spacing-size} { padding-top: $value!important};
+	.p-r-#{$spacing-size} { padding-right: $value!important};
+	.p-b-#{$spacing-size} { padding-bottom: $value!important};
+	.p-l-#{$spacing-size} { padding-left: $value!important};
+	.p-w-#{$spacing-size} {
+		@extend .p-l-#{$spacing-size};
+		@extend .p-r-#{$spacing-size};
+	};
+	.p-h-#{$spacing-size} {
+		@extend .p-t-#{$spacing-size};
+		@extend .p-b-#{$spacing-size};
+	};
+
+	//outer-spacings (margins)
+	.m-#{$spacing-size} { margin: $value!important};
+	.m-t-#{$spacing-size} { margin-top: $value!important};
+	.m-r-#{$spacing-size} { margin-right: $value!important};
+	.m-b-#{$spacing-size} { margin-bottom: $value!important};
+	.m-l-#{$spacing-size} { margin-left: $value!important};
+	.m-t-n-#{$spacing-size} { margin-top: -$value!important};
+	.m-r-n-#{$spacing-size} { margin-right: -$value!important};
+	.m-b-n-#{$spacing-size} { margin-bottom: -$value!important};
+	.m-l-n-#{$spacing-size} { margin-left: -$value!important};
+	.m-w-#{$spacing-size} {
+		@extend .m-l-#{$spacing-size};
+		@extend .m-r-#{$spacing-size};
+	};
+	.m-h-#{$spacing-size} {
+		@extend .m-t-#{$spacing-size};
+		@extend .m-b-#{$spacing-size};
+	};
+
+}
+
+//legacy classes
+.no-padding {
+	@extend .p-none;
+}
+.no-margin,.no-margins{
+	@extend .m-none;
+}

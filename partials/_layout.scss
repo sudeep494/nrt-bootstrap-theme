@@ -1,0 +1,121 @@
+body{
+	padding-top: 60px;
+	.app-loading{
+		position:absolute;
+		left:40%;
+	}
+
+	.navbar-brand{
+		@extend .d-none;
+		@extend .d-sm-none;
+		@extend .d-md-block;
+	}
+
+	#wrapper{
+		position: absolute;
+		width: 100%;
+		display:flex;
+
+		#page-content-wrapper {
+			padding-left: 0;
+			background-color:#fff;
+			margin:20px;
+			padding:10px 20px;
+			min-height:1000px;
+			width:calc(100% - 40px);
+			-webkit-transition: padding-left 0.3s ease;
+			-moz-transition: padding-left 0.3s ease;
+			-o-transition: padding-left 0.3s ease;
+			transition: padding-left 0.3s ease;
+		}
+
+
+
+		/*-------------------------------*/
+		/*       Sidebar                  */
+		/*-------------------------------*/
+		#sideNav{
+			width: 0;
+			height: 100%;
+			visibility:hidden;
+			min-height:1000px;
+			overflow-y: auto;
+			overflow-x: hidden;
+			background: #e0e0e0;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+			background-color:#fff;
+			-webkit-box-shadow: 3px 2px 5px 0px rgba(197,197,197,1);
+			-moz-box-shadow: 3px 2px 5px 0px rgba(197,197,197,1);
+			box-shadow: 3px 2px 5px 0px rgba(197,197,197,1);
+			padding:20px 20px 20px 0;
+			font-size: $font-size-base * 1.1;
+			.nav{
+				position:absolute;
+				top:20px;
+			}
+		}
+		#sideNav.show{
+			display:flex;
+			min-width:240px;
+			max-width:240px;
+			visibility:visible;
+		}
+		#sideNav.collapsing{
+			min-width:0;
+			max-width:0;
+		}
+
+		.sidebar-nav li a {
+			display: block;
+			color: $gray-800;
+			padding: 10px 15px;
+		}
+		.sidebar-nav li ul li a {
+			padding-left: 30px!important;
+		}
+
+		.sidebar-nav li a:hover,
+		.sidebar-nav li a:active,
+		.sidebar-nav li a:focus,
+		.sidebar-nav li.open a:hover,
+		.sidebar-nav li.open a:active,
+		.sidebar-nav li.open a:focus{
+			background-color: $white!important;
+		}
+		.sidebar-nav ul{
+			list-style: none outside none;
+			margin-left: 0;
+			padding-left:0;
+		}
+		.sidebar-nav li a.current, .sidebar-nav li a.current:hover{
+			border-left: 20px solid $primary;
+		}
+		.sidebar-nav li a{
+			border-left: 20px solid $white;
+		}
+		.sidebar-nav li a:hover{
+			border-left: 20px solid $gray-300;
+		}
+		.sidebar-nav li{
+			margin: 3px 0;
+		}
+		#navClose{
+			position:absolute;
+			top:0px;
+			right:0px;
+			color:$gray-300;
+			cursor: pointer;
+			z-index:999;
+			padding: 10px;
+		}
+		#navClose:hover{
+			color:$gray-500;
+		}
+
+	}
+
+
+}

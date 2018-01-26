@@ -1,0 +1,39 @@
+//NRT BootStrap Theme Vars (global)
+
+//Colors (for company specific skinning, set colors vars in company themes )
+$primary: #4cc4e7!default;
+$secondary: #767676!default;
+$body-bg: #e9ecef!default;
+$navbar-dark-color: #3c3c3c!default;
+$body-color: #606060!default;
+
+//typography
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+$font-family-base: Lato;
+$font-size-base: 0.875rem; //(16px->14px)
+$h1-font-size: $font-size-base * 1.60;
+$h2-font-size: $font-size-base * 1.40;
+$h3-font-size: $font-size-base * 1.30;
+$h4-font-size: $font-size-base * 1.20;
+$h5-font-size: $font-size-base * 1.10;
+$headings-font-weight: 700;
+$link-hover-decoration: none;
+
+//navbar
+$navbar-toggler-padding-y: .2rem;
+$navbar-toggler-padding-x: .8rem;
+$navbar-toggler-font-size: 1.5rem;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='4' stroke-linecap='round' stroke-miterlimit='15' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !default;
+$navbar-dark-toggler-border-color: transparent;
+$navbar-brand-font-size: 1.5rem;
+
+//buttons
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+$btn-border-width: 2px;
+
+//Any additional Components
+//modals
+//tables
+//etc

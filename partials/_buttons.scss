@@ -1,0 +1,22 @@
+.btn{
+	color:$white!important;
+}
+.btn:hover{
+	background-color: $white;
+}
+//for inverse outlining (inverse of BS outline)
+@each $color, $value in $theme-colors {
+	.btn-#{$color}:hover {color:$value!important};
+}
+
+.btn, .btn-md{
+	min-width:80px;
+}
+
+.btn, .btn-sm{
+	min-width:60px;
+}
+
+.btn, .btn-lg{
+	min-width:100px;
+}

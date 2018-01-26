@@ -1,0 +1,95 @@
+//// Google Fonts
+// @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900");
+
+//styles
+.italic{
+   font-style:italic;
+}
+.extra-light{
+	font-weight:200;
+}
+.light{
+	font-weight:300;
+}
+.regular{
+	font-weight:400!important;
+}
+.semi-bold{
+	font-weight:600;
+}
+.bold{
+	font-weight:700;
+}
+.black{
+	font-weight:900;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+.text-lowercase {
+	text-transform: lowercase;
+}
+.underline{
+	text-decoration: underline;
+}
+
+//headers
+h1{
+	font-size:23px!important;
+	margin-top:10px;
+	@extend .semi-bold;
+	.sub-header{
+		@extend .light;
+	}
+	letter-spacing: -1px;
+}
+h2{
+	font-size:21px!important;
+	margin-top:8px;
+	letter-spacing: -1px;
+	@extend .semi-bold;
+	.sub-header{
+		@extend .light;
+	}
+}
+h3{
+	font-size:19px!important;
+	margin-top:5px;
+	@extend .semi-bold;
+	.sub-header{
+		@extend .light;
+	}
+}
+h4{
+	font-size:17px!important;
+	margin-top:5px;
+	@extend .semi-bold;
+	.sub-header{
+		@extend .light;
+	}
+}
+h5{
+	font-size:15px!important;
+	margin-top:5px;
+	@extend .semi-bold;
+	.sub-header{
+		@extend .light;
+	}
+}
+
+//sizes
+.smaller{
+	font-size: 11px;
+}
+small,.small{
+	font-size: 13px;
+}
+.medium{
+	font-size: 15px;
+}
+.large{
+	font-size: 17px;
+}
+.larger{
+	font-size: 19px;
+}

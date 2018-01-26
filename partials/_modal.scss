@@ -1,0 +1,28 @@
+.modal{
+	.modal-dialog{
+		.modal-content{
+			border-radius:0px;
+			.modal-header{
+				background-color:$gray-700;
+				border-radius:0px;
+				min-height:50px;
+				color:$white;
+				h1,h2,h3,h4{
+					@extend .my-0;
+				}
+				.close{
+					background-color: $primary;
+					color:$white;
+					opacity:1;
+					position:absolute;
+					right:15px;
+					top:15px;
+					padding:5px 10px;
+					border-radius: 0 0 0 5px;
+					box-shadow:5px 6px 8px -6px $gray-400;
+				}
+			}
+		}
+	}
+
+}

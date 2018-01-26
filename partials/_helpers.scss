@@ -1,0 +1,83 @@
+.full-width {
+	width: 100% !important;
+	min-width: 100% !important;
+}
+.full-width-95 {
+	max-width: 95%!important;
+	min-width: 95%!important;
+	width: 95%!important;
+}
+.width-50 {
+	width: 50%!important;
+}
+.width-75 {
+	width: 75%!important;
+}
+.full-height {
+	height: 100% !important;
+}
+.no-max-width {
+	max-width: none;
+}
+.line-height-1{
+	line-height:1em;
+}
+
+//display
+.block {
+	display: block!important;
+}
+.inline {
+	display: inline-block;
+}
+.inline {
+	display: inline-block;
+}
+
+//cursor
+.pointer{
+	cursor: pointer;
+}
+
+//position
+.static{
+	position:static!important;
+}
+.relative{
+	position:relative!important;
+}
+.absolute{
+	position:absolute!important;
+}
+
+.code-sample{
+	pre{
+		background-color:$gray-200;
+		color:yellow;
+	}
+}
+
+.ellipsis{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+}
+
+.img-xs{
+	width:15px;
+}
+.img-sm{
+	width:20px;
+}
+.img-md{
+	width:25px;
+}
+
+.draggable{
+	cursor: move;
+}
+
+text.highcharts-credits{
+	fill: #fff!important;
+}
