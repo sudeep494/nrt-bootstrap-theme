@@ -1,0 +1,22 @@
+{
+  "name": "nrt-bootstrap-theme",
+  "version": "1.0.0",
+  "description": "nrt bootstrap theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudeep494/nrt-bootstrap-theme.git"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "sks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudeep494/nrt-bootstrap-theme/issues"
+  },
+  "homepage": "https://github.com/sudeep494/nrt-bootstrap-theme#readme"
+}
